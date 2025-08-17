@@ -1,0 +1,18 @@
+//  Paleta de colores
+$color-principal: #ff5733;
+$color-secundario: #222;
+$color-texto: #333;
+$color-fondo: #f9f9f9;
+$color-acento: #007bff; // para detalles o botones
+$color-hover: darken($color-principal, 10%); // Hover automático
+
+$fuente-principal: 'Segoe UI', sans-serif;
+$fuente-secundaria: 'Roboto', sans-serif;
+
+//  tamaños
+$border-radius: 8px;
+$espaciado: 1rem;
+
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 992px;
+$breakpoint-desktop: 1200px;

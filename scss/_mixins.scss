@@ -1,0 +1,41 @@
+// Media Queries
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $breakpoint-mobile) { @content; }
+  } @else if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) { @content; }
+  } @else if $breakpoint == desktop {
+    @media (max-width: $breakpoint-desktop) { @content; }
+  }
+}
+
+// Botón reutilizable
+@mixin boton-estandar($bg: $color-principal, $color: white) {
+  background-color: $bg;
+  color: $color;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: $border-radius;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($bg, 10%);
+  }
+}
+
+// Centrado Flex
+@mixin centrar-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Sombra suave
+@mixin sombra {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
